@@ -1,0 +1,66 @@
+@import 'element.less';
+html,
+body,
+#app {
+  height: 100%;
+  -webkit-text-size-adjust: none;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+.no-right-padding {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/*滚动条样式*/
+::-webkit-scrollbar {
+  /*滚动条整体样式*/
+  width: 6px; /*高宽分别对应横竖滚动条的尺寸*/
+  height: 6px;
+}
+::-webkit-scrollbar-thumb {
+  /*滚动条里面小方块*/
+  border-radius: 5px;
+  box-shadow: inset 0 0 6px #dddddd;
+  background: #dddddd;
+}
+::-webkit-scrollbar-track {
+  /*滚动条里面轨道*/
+  box-shadow: inset 0 0 6px #ffffff;
+  border-radius: 0;
+  background: #ffffff;
+}
+.page-content::-webkit-scrollbar-thumb {
+  box-shadow: none;
+  background: transparent;
+}
+.page-content::-webkit-scrollbar-track {
+  box-shadow: none;
+  background: transparent;
+}
+.page-content:hover::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 6px #dddddd;
+  background: #dddddd;
+}
+.page-content:hover::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px #ffffff;
+  background: #ffffff;
+}
+
+#refPlayerWrap {
+  width: 100%;
+}
+.gray {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  text-align: center;
+}
+
+.page-header{
+  background-color:#0084cf;
+}

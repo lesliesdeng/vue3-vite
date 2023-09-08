@@ -1,0 +1,204 @@
+@import 'variable.less';
+.el-select {
+  width: 100%;
+}
+.el-table__header {
+  .el-table__cell {
+    background-color: @grey-4 !important;
+  }
+}
+.el-dialog--center,
+.el-dialog {
+  .el-dialog__body {
+    padding: 10px 30px !important;
+  }
+  .el-tree--highlight-current .el-tree-node.is-checked > .el-tree-node__content {
+    background-color: @blue-2;
+    color: #fff;
+  }
+  .el-tree-node__content {
+    .el-tooltip {
+      font-size: 14px;
+    }
+  }
+}
+.index-3000,
+.el-message {
+  z-index: 3000 !important;
+}
+
+// 重新按钮样式
+.el-button {
+  height: 44px !important;
+  border-radius: 6px !important;
+  padding: 0 20px !important;
+}
+.el-button--primary {
+  background-color: @blue-2 !important;
+  border: 1px solid @blue-2 !important;
+  // color: @blue-2 !important;
+}
+.is-plain {
+  background-color: #fff !important;
+  color: @blue-2 !important;
+}
+.is-link {
+  padding: 0 !important;
+  background-color: transparent !important;
+  border: none !important;
+}
+.is-round {
+  border-radius: 22px !important;
+}
+
+.botton-box-small {
+  .el-button {
+    height: 38px !important;
+  }
+  .is-round {
+    border-radius: 19px !important;
+  }
+}
+
+.el-table__cell .el-button--primary {
+  color: @blue-2 !important;
+}
+// 重写form样式
+.el-form-item {
+  align-items: center;
+  // padding:0 60px 20px 0 !important;
+}
+.el-autocomplete-suggestion {
+  li:hover {
+    background-color: #fff !important;
+  }
+}
+
+.el-input,
+.el-date-editor {
+  height: 44px !important;
+  .el-input__wrapper {
+    width: 100%;
+    box-sizing: border-box;
+    height: 100%;
+  }
+}
+
+// 分页样式
+.el-pager {
+  .is-active {
+    background-color: @blue-2 !important;
+    color: #fff !important;
+  }
+}
+
+// 弹窗样式
+.el-dialog__header {
+  text-align: left;
+  box-sizing: border-box;
+  height: 64px !important;
+  box-shadow: inset 0px -1px 0px 0px rgba(232, 232, 232, 1);
+  font-size: 20px !important;
+  color: #111111 !important;
+  margin: 0 !important;
+  .el-dialog__title {
+    font-weight: 600;
+    display: inline-block;
+    max-width: 98%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+}
+.el-dialog__body {
+  max-height: 55vh;
+  overflow: auto;
+}
+.el-dialog__footer {
+  box-sizing: border-box;
+  height: 68px !important;
+  box-shadow: inset 0px 1px 0px 0px rgba(232, 232, 232, 1);
+  text-align: right !important;
+  padding: 10px 30px 20px 30px !important;
+}
+.el-select-dropdown.is-multiple .el-select-dropdown__item.selected {
+  color: @blue-2 !important;
+}
+.el-checkbox__input.is-indeterminate .el-checkbox__inner,
+.el-checkbox__input.is-checked .el-checkbox__inner {
+  background-color: @blue-2 !important;
+  border-color: @blue-2 !important;
+}
+
+// 上传弹框，上传成功文件样式
+.el-upload-list__item {
+  border: none !important;
+  padding: 5px 0 !important;
+}
+
+.el-table__cell {
+  .el-button--small {
+    font-size: 14px;
+  }
+}
+.el-table__body-wrapper {
+  :deep(.el-popper) {
+    max-width: 420px;
+    text-align: left;
+  }
+}
+.el-table__inner-wrapper {
+  .el-checkbox__inner {
+    width: 22px;
+    height: 22px;
+    &::after {
+      width: 5px;
+      height: 10px;
+      left: 8px;
+    }
+    &::before {
+      top: 9px !important;
+    }
+  }
+}
+// 解决：下拉菜单偶现黑框
+.el-dropdown {
+  .el-tooltip__trigger {
+    outline: none !important;
+  }
+}
+:deep(:focus-visible) {
+  outline: none;
+}
+// .el-tree-node:focus>.el-tree-node__content{
+//   background-color:@blue-2 !important;
+//   color: #fff;
+// }
+
+// .el-tree-node:focus>.el-tree-node__content .el-select-dropdown__item span{
+//   color: #fff;
+// }
+.el-message {
+  z-index: 11000 !important; //创客贴弹窗z-index为10000，项目弹窗起始值设置为10001，elmessage 从10200开始
+}
+.el-loading-mask {
+  z-index: 12000 !important;
+}
+
+// messagebox弹窗  取消按钮放在右边
+.el-message-box__btns {
+  justify-content: flex-start !important;
+  flex-direction: row-reverse !important;
+}
+.el-message-box__btns button:nth-child(1) {
+  margin-left: 10px !important;
+}
+.el-message-box__btns button:nth-child(2) {
+  margin-left: 0 !important;
+}
+.ckt-page-modal,
+.share-modal {
+  .el-dialog__footer {
+    background-color: #f4f4f4;
+  }
+}
